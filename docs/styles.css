@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+    font-family: arial, helvetica, sans-serif;
+}
+h1{
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.logo {
+    position: relative;
+    animation-name: opening;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+a:hover{
+    text-decoration: inherit;
+    color: grey;
+}
+
+@keyframes opening{
+    from{ top:-5px; color: black; }
+    to{ top:25px; color: white; }
+}
+@keyframes navigation{
+    from{ top:-5px; color: black; }
+    to{ top:25px; color: white; }
+}
+@keyframes header{
+    from{ left: 60px; letter-spacing:70px; color: black;}
+    to{ left: 0px; letter-spacing:1px; color: white; }
+}
+
+nav {
+    position: relative;
+    animation-name: navigation;
+    animation-delay: 0.3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    word-spacing: 30px;
+    margin-bottom: 40px;
+    
+}
+
+div.top{
+    margin: auto;
+    text-align: center;
+}
+.main{
+    border-top: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    width: 75%;
+    height: 700px;
+    margin: auto;
+}
+
+.mainHeader{
+    text-align: center;
+    letter-spacing: 5px;
+    animation-name: header;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+}
+
+p{
+    margin: 15px;
+}
