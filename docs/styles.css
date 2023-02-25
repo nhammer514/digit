@@ -13,6 +13,10 @@ h1{
     animation-fill-mode: forwards;
 }
 
+#page-about {display:block;}
+#page-projects {display:none;}
+#page-resume {display:none;}
+
 a{
     text-decoration: inherit;
     color: inherit;
@@ -20,6 +24,7 @@ a{
 a:hover{
     text-decoration: inherit;
     color: grey;
+    cursor: pointer;
 }
 
 @keyframes opening{
@@ -50,12 +55,18 @@ div.top{
     margin: auto;
     text-align: center;
 }
+
+img.portrait{
+    width: 20em;
+    display: inline;
+    float: right;
+}
+
 .main{
     border-top: 3px solid white;
     border-radius: 25px;
     color: white;
     width: 75%;
-    height: 700px;
     margin: auto;
 }
 
@@ -69,4 +80,19 @@ div.top{
 
 p{
     margin: 15px;
+    margin-left: 40px;
+    margin-right: 25px;
+}
+
+h3{
+    margin-left: 20px;
+    text-decoration-line: underline;
+    
+}
+ul{
+    margin-left: 60px;
+    
+}
+dateText{
+    float: right;
 }
