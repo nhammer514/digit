@@ -11,7 +11,6 @@ function setMenu(){
     var sectionID =  "page-" + this.id;
     var selSection = document.getElementById(sectionID)
     selSection.style.display = 'block';
-    topHeader.textContent = this.id;
 }
 
 function hidePages(){
