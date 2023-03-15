@@ -7,6 +7,21 @@ h1{
     margin-bottom: 5px;
     margin-bottom: 0px;
 }
+
+.art{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+}
+
+.back{
+	position: relative;
+	text-align: center;
+	margin: auto;
+	text-decoration-line: underline;
+}
+
 .logo {
     position: relative;
     animation-name: opening;
@@ -17,6 +32,8 @@ h1{
 #page-about {display:block;}
 #page-projects {display:none;}
 #page-resume {display:none;}
+#page-gallery {display:none;}
+#page-reflective {display:none;}
 
 a{
     text-decoration: inherit;
