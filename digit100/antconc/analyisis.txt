@@ -1,0 +1,3 @@
+I was looking at The Adventure of “The Western Star”, and its contents. Messing with the N-Gram size, I discovered that fller words and nouns have the highest frequencies, reaching into
+the double digits. The smaller the N-Gram size, more typical phrases with high frequencies. Aside from irrelevant texts, the phrase "I don't know" was used very often. Since it is a common
+saying when someone lacks knowledge, this should not be a suprise.
