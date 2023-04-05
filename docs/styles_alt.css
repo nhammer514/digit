@@ -1,13 +1,17 @@
 body{
     background-color: black;
-    font-family: arial, helvetica, sans-serif;
+    font-family: monospace;
+    background-image: url('images/corpus_analysis_background.png');
 }
 h1{
     font-size: 50px;
     margin-bottom: 5px;
     margin-bottom: 0px;
+    color: limegreen;
 }
-
+p.caption{
+    bottom: 60px;
+}
 .logo {
     position: relative;
     animation-name: opening;
@@ -23,25 +27,12 @@ h1{
 #page-conspiracy {display:none;}
 a{
     text-decoration: inherit;
-    color: inherit;
+    color: limegreen;
 }
 a:hover{
     text-decoration: inherit;
-    color: grey;
+    color: white;
     cursor: pointer;
-}
-
-@keyframes opening{
-    from{ top:-5px; color: black; }
-    to{ top:25px; color: white; }
-}
-@keyframes navigation{
-    from{ top:5px; color: black; }
-    to{ top:25px; color: white; }
-}
-@keyframes header{
-    from{ left: 60px; letter-spacing:70px; color: black;}
-    to{ left: 0px; letter-spacing:1px; color: white; }
 }
 
 nav {
@@ -51,6 +42,7 @@ nav {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     word-spacing: 30px;
+    font-size: 15px;
     margin-bottom: 40px;
     
 }
@@ -66,24 +58,44 @@ img.portrait{
     float: right;
 }
 
+img.figure{
+    width: 500px;
+}
+
 .main{
-    border-top: 3px solid white;
-    border-bottom: 1px solid white;
-    border-radius: 25px;
-    width: 74vw;
+    border: 2px solid limegreen;
+    width: 65vw;
     margin: auto;
+    background-color: black;
+    overflow-y: scroll;
 }
 .content{
-    color: white;
-    width: 72.5vw;
-    height:77vh;
+    color: limegreen;
+    width: 60vw;
     margin: auto;
-    overflow-y: scroll;
+}
+
+figure{
+    border: 2px dotted limegreen;
+    margin: auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 76vh;
+  height: 1px;
 }
 ::-webkit-scrollbar-thumb {
   background: #888; 
@@ -91,27 +103,32 @@ img.portrait{
 }
 
 
-.mainHeader{
+h2.mainHeader{
     text-align: center;
     letter-spacing: 5px;
     animation-name: header;
     animation-duration: 0s;
     animation-fill-mode: forwards;
+    font-size: 25px;
 }
 
 p{
+    color: limegreen;
     margin: 15px;
     margin-left: 20px;
     margin-right: 25px;
+    font-size: 18px;
 }
 
 .updatedText{
-	color: white;
+	color: limegreen;;
 	text-align: center;
 }
 
 h3{
-    margin-left: 20px;
+	text-align: center;
+    margin: auto;
+    font-size: 20px;
     
 }
 
@@ -126,7 +143,7 @@ ul{
 }
 
 hr{
-    color: white;
+    color: limegreen;
     width: 75%;
 }
 dateText{

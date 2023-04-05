@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+    font-family: "Courier New";
+    background-image: url('images/corpus_analysis_background.png');
+    color: #00FF00;
+}
+nav {
+    position: relative;
+    word-spacing: 30px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  color: green;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+div.section{
+    display: block;
+    border: 2px dotted limegreen;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+}
+div.text{
+    display: block;
+}
+
+img.figure{
+    width: 25vw;
+}
+img.figure2{
+    width: 20vw;
+}
+figure{
+    display: inline-block;
+    border: 1px dotted black;
+}
+a{
+    text-decoration: inherit;
+    color: limegreen;
+}
+a:hover{
+    text-decoration: inherit;
+    color: white;
+    cursor: pointer;
+}
+
+div.content{
+    width: 75vw;
+    height: 85vh;
+    margin:auto;
+    border: 3px solid limegreen;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-y: scroll;
+    background-color: black;
+}
+#section-vocab {display:none;}
+#section-sentence {display:none;}
+#section-antconc {display:none;}
+button{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+button:hover{
+    border: 1px solid #00FF00;
+    color: #00FF00
+}
+h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin: 5px;
+}

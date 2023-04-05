@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> test </title>
+        <link rel="stylesheet" href="test.css">
+        <script src="textfile_script.js"></script>
+    </head>
+    <body>
+        <h1>nhammer.online</h1>
+        <nav>
+            <a href="https://nhammer514.github.io/digit/">Return</a>
+            <a href="http://www.textfiles.com/">TextFiles.com</a>
+        </nav>
+        <div class="content">
+            <h2> Analyzing the Conspiracy & Political Corpuses</h2>
+            <p> &emsp;&emsp;As long as there is a government, people will question the powers that
+                be. With the immergence of the Internet, people questioning the government and its
+                antics is now fairly common. Any one can now access documents that (allegedly)
+                reveal all of big brother's darkest secrets through online forums and databases.</p>
+            <p><i>TextFiles.com</i> is one website that has archived hundred, possibly thousands of
+                text files, some of which are related to conspiracy theories and political files.
+                Funnily enough, both categories are questioned for their reliablity and
+                trustworthiness. So, I figured it might be interesting to compare the two. Before I
+                started analyzing the corpuses, I hypothesized that the conspiracy texts would be
+                scattered in relevance to their topics and be written informally. While the
+                political texts would written professionally, and be related to national matters
+                inside the United States.</p>
+            <p>Unfortunately, due to errors, I could not examine each and every single text using
+                Voyant. So, I chose 23 text files each from both categories. The results seemed to
+                prove my hypothesis.</p>
+            <div style="text-align: center;">
+                <button id="vocab"> Toggle Vocabulary Comparison</button>
+            </div>
+            <div class="section" id="section-vocab">
+                <h3> Vocabulary Comparison </h3>
+                <figure>
+                    <img src="images/conspiracy/conspiracy_wordcloud.png" alt="conspiracy wordcloud"
+                        class="figure">
+                    <figcaption> Conspiracy Corpus (Fig. 1a)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/conspiracy/political_wordcloud.png" alt="political wordcloud"
+                        class="figure">
+                    <figcaption> Political Corpus (Fig. 2a)</figcaption>
+                </figure>
+                <p> &emsp;&emsp;The most notable difference between the two corpuses is the
+                    difference in vocabulary. Looking at the conspiracies, the words vary, relating
+                    to some kind of government corruption. Most of the texts are directly
+                    referencing the United State's government and its international relations with
+                    geopolitical entities, like Africa and New Zealand. The CIA seems to be the
+                    prime suspect in most of the conspiracies, but this is understandable since the
+                    Agency is known to handle foreign matters. (Fig 1.)</p>
+                <p> &emsp;&emsp;Regardless of some questionable theories in regards to the CIA; it
+                    is a real-world entity that has power in political affairs. In the political
+                    corpus, the CIA is mentioned several times for operating with no respect of
+                    ethics. Beyond the CIA and foreign-related matters, the corpus seems more
+                    related to national occurances. (Fig 2.)</p>
+            </div>
+            <div class="text">
+                <p> &emsp;Comparing the two corpuses reveal American culture and its relation with
+                    governmental corruption. Governmental assignments lke MK-Ultra and Operation
+                    Condor portray an image of a machiavellian entity willing to use and abuse its
+                    citizens. Conspiracies related to the United States' governments are not ideas
+                    made up from baseless assumptions, but are allegations that are backed up by
+                    real-world events. Still, a majority of conspiracies lack any real evidence that
+                    back up their claims. This brings into question the competency of the texts
+                    themselves.</p>
+            </div>
+            <div style="text-align: center;">
+                <button id="sentence"> Toggle Sentence Comparison</button>
+            </div>
+            <div class="section" id="section-sentence">
+                <h3> Sentence Comparison </h3>
+                <figure>
+                    <img src="images/conspiracy/conspiracy_data.png" alt="conspiracy wordcloud"
+                        class="figure">
+                    <figcaption> Conspiracy Corpus (Fig. 1b)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/conspiracy/political_data.png" alt="political wordcloud"
+                        class="figure">
+                    <figcaption> Political Corpus (Fig. 2b)</figcaption>
+                </figure>
+                <p> &emsp; The political corpus has 4647 unique word than the conspiracy corpus. It
+                    is hard to say that the number of unique words is related to the complexity to
+                    the content or is simply the result of having more words in general. For the
+                    benefit of the doubt, it is likely the latter </p>
+                <p> &emsp; What is rather noticable difference between the two corpuses is the
+                    Readability Index. Though the difference is minor, the political documents have
+                    more readable text compared to the conspiracies. The consistency of readability
+                    seems not as variable either.</p>
+            </div>
+            <div class="text">
+                <p> &emsp;Of course, government documents are written to be understood by most
+                    people who read them, so consistent writing and good readability is expected.
+                    You can apply that logic to the conspiracy files, but thats ignoring their
+                    origin and purpose. By nature, conspiracy theories are biased and informal,
+                    especially compared to governmental texts. Most of the conspiracy files from
+                        <i>TextFiles.com</i> are written by online denizens or partisan
+                    organizations. Some texts are equivelent to word salad, on par to the writings
+                    of a schizophrenic. </p>
+            </div>
+            <div style="text-align: center;">
+                <button id="antconc"> Toggle AntConc Comparison</button>
+            </div>
+            <div class="section" id="section-antconc">
+                <h3> AntConc Comparison </h3>
+                <figure>
+                    <img src="images/conspiracy/political_antconc_ngram.png"
+                        alt="conspiracy wordcloud" class="figure2">
+                    <figcaption> Conspiracy Corpus (Fig. 1c)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/conspiracy/conspiracy_antconc_ngram.png"
+                        alt="political wordcloud" class="figure2">
+                    <figcaption> Political Corpus (Fig. 2c)</figcaption>
+                </figure>
+                <p> &emsp; Launching up AntConc and looking at the ngrams of each reveal the same results. Most combination of words or phrases are references to geopolitical entities, locations, or people. However, some phrases stand out, such as; "members of the" and "prisoners of war". Increasing the N-Gram size seems to yield the same results.</p>
+                <figure>
+                    <img src="images/conspiracy/conspiracy_antconc_ngram2.png"
+                        alt="conspiracy wordcloud" class="figure2">
+                    <figcaption> Conspiracy Corpus (Fig. 1d)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/conspiracy/political_antconc_ngram2.png"
+                        alt="political wordcloud" class="figure2">
+                    <figcaption> Political Corpus (Fig. 2d)</figcaption>
+                </figure>
+            </div>
+            <div class="text">
+                <p> &emsp;Looking at AntConc, not too much information is revealed aside from the fact that a majrotiy of these files have to deal with political locations and entities.</p>
+            </div>
+            <h2> Conclusion</h2>
+            <p> &emsp;The conspiracy and political file from TextFiles.com differed like I predicted. With the conspiracy files going over a variety of different political topics and interests, while the political files are in reference to national affairs. It is a facinating group of texts to explore. Like I mentioned before, a majority of the files could not be analyzed due to errors with the software. There is still a lot left unexplored. Big thanks to TextFiles.com for providing an awesome array of files to look at! You can access the website at the top of website, in the navigation bar.</p>
+        </div>
+    </body>
+</html>
