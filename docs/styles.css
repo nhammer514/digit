@@ -66,6 +66,10 @@ img.portrait{
     float: right;
 }
 
+.copyright{
+	margin: auto;
+}
+
 .main{
     border-top: 3px solid white;
     border-bottom: 1px solid white;
