@@ -37,9 +37,20 @@ i.highlight{
 	color: yellow;
 }
 
-iframe{
-	width: 40vw;
+div.frame1{
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+	width: 640px;
 }
+
+div.frame2{
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+	width: 489px;
+}
+
 h1{
     text-align: center;
     margin-bottom: 5px;
