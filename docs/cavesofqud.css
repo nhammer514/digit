@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    font-family: "Verdana";
+    background-image: url('images/cavesofqud/background.png');
+    color: #FFFFFF;
+}
+nav {
+    position: relative;
+    word-spacing: 30px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+a{
+    text-decoration: inherit;
+    color: white;
+}
+a:hover{
+	
+    text-decoration: inherit;
+    color: yellow;
+    cursor: pointer;
+}
+div.content{
+	background-color: #083A3A;
+	border-radius: 25px;
+	color: white;
+    width: 60vw;
+    margin:auto;
+	opacity: 1.0;
+	padding-top: 1vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+i.highlight{
+	color: yellow;
+}
+
+iframe{
+	width: 40vw;
+}
+h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin: 5px;
+}
