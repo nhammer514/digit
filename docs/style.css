@@ -1,0 +1,136 @@
+body {
+	background-color: black;
+	font-family: Arial Black;
+}
+
+section.main{
+	margin: auto;
+	position: relative;
+	width: 40vw; 
+	height: 96vh;
+}
+p{
+	font-weight: bold;
+	font-family: Monospace;
+	text-align: left;
+	font-size: 21px;
+	color: white;
+}
+
+section.home-main{
+	color: white;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	width: 70vw; 
+	height: 96vh;
+}
+
+div.content{
+	border-top: 2px solid #00FF00;
+	height: 80vh;
+	overflow-y: scroll;
+	text-align: left;
+}
+
+img.logo1{
+	left: 50%;
+	position: absolute;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	height: 25vh;
+	animation-name: fadeIn;
+	transform: translate(-50%, -50%);
+}
+img.logo2{
+	top: 0;
+	left: 50%;
+	position: absolute;
+	height: 7em;
+	transform: translate(-50%, 0);
+}
+
+h1.logo{
+	position: absolute;
+	font-size: 8vh;
+	color: black;
+	left: 50%;
+	top: 52%;
+	transform: translate(-50%, -50%);
+	animation-name: fadeIn2;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+h2{
+	font-size: 1.5vh;
+}
+
+hr{
+	width: 50%;
+}
+
+li{
+	font-size: 20px;
+	font-family: Monospace;
+}
+
+@keyframes fadeIn{
+	from {
+		opacity: 0;
+		top: 25%;
+	}
+	to {
+		opacity: 1.0;
+		top: 40%;
+	}
+}
+@keyframes fadeIn2{
+	from {
+		opacity: 0;
+		color: black;
+	}
+	to {
+		opacity: 1.0;
+		color: #00FF00;
+	}
+}
+
+a{
+	color: #00FF00;
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+}
+
+nav{
+	word-spacing: 35px;
+	color: #00FF00;
+	padding-top: 5em;
+	font-size: 1.5em;
+}
+
+h1.header{
+	color: white;
+	text-align: center;
+}
+
+div.flex-container{
+	display: flex;
+}
+
+img.portrait{
+	border: 2px solid #00FF00;
+	float: right;
+	width: 35%
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 76vh;
+}
+::-webkit-scrollbar-thumb {
+  background: #00FF00;
+}

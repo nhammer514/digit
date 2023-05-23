@@ -7,7 +7,7 @@ import requests
 import os
 
 # ebb: This variable stores the website address that you want to scrape.
-archive_url = "http://www.textfiles.com/conspiracy/"
+archive_url = "https://www.cs.cmu.edu/~spok/grimmtmp/"
 
 def get_tales():
     # create response object
@@ -17,15 +17,15 @@ def get_tales():
     soup = bs4.BeautifulSoup(r.content, 'html.parser')
 
     # find all links on web-page
-    for item in soup.select('TD[ALIGN="TOP"]'):
+    for item in soup.findAll('li'):
         link = item.find('a')
         href = archive_url + link['href']
         download_links(href)
-    print("~~All files downloaded~~")
+    print("All tales downloaded!")
     # ebb: After class I realized the print line indicating
-    #     # all files downloaded needed to go after THIS loop finished.
-    #     # Do you see why it makes sense and works here?
-    #     # Hint: it has to do with when we call the function download_links(href)
+    # all files downloaded needed to go after THIS loop finished.
+    # Do you see why it makes sense and works here?
+    # Hint: it has to do with when we call the function download_links(href)
 def download_links(href):
     # obtain filename by splitting url and getting last string
     file_name = href.split('/')[-1]
@@ -35,11 +35,9 @@ def download_links(href):
     r = requests.get(href, stream = True)
 
     workingDir = os.getcwd()
-    if not os.path.exists("conspiracyText"):
-        print("~~conspiracyText not found... Creating directory.~~")
-        os.makedirs('conspiracyText')
-
-    fileDeposit = os.path.join(workingDir, 'conspiracyText', file_name)
+    print("current working directory: " + workingDir)
+    fileDeposit = os.path.join(workingDir, 'grimmTales', file_name)
+    print(fileDeposit)
 
 
     # download started
@@ -58,5 +56,7 @@ if __name__ == "__main__":
 
     # getting all links to files
     get_tales = get_tales()
+
+
 
 

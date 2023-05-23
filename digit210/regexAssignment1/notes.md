@@ -1,0 +1,11 @@
+# Steps of REGEX
+- ```Find: '&' // Replace with: '&amp;'```: 315 matches replaced
+- ```Find: '>' // Replace with: '&gt;'```: String not found
+- ```Find: '<' // Replace with: '&lt;'```: String not found
+- ```Find: '"' // Replace with: '&quot;'```: 10,546 matches replaced
+- ```Find: '.+' // Replace with: '<movie>\0</movie>'```: 25,094 matches replaced
+- ```Wrapped text in <xml>```
+- ```Find: '(<movie>)(.+)([0-9]{4,})' // Replace with: '\1<title>\2</title><date>\3</date>'```: 25,094 matches replaced
+- ```Find: '(</date>)\s+&quot;(.+)&quot;' // Replace with: '\1<location>\2</location>'```: 4,824 matches replaced
+- ```Find: '(</location>)\s+(\d+)\s(\w+)' // Replace with: '\1<time unit="\3">\2</time>'```: 24,412 matches replaced
+- ```Find: '(</location>)\s+(\w..)' // Replace with: '\1<time>\2</time>'```: 24,412 matches replaced
