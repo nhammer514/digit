@@ -126,6 +126,11 @@ img.portrait{
 	float: right;
 	width: 35%
 }
+img.portrait2{
+	border: 2px solid #00FF00;
+	float: left;
+	width: 35%
+}
 
 ::-webkit-scrollbar {
   width: 2px;
