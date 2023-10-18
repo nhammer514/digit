@@ -134,7 +134,7 @@ img.portrait2{
 
 ::-webkit-scrollbar {
   width: 2px;
-  height: 76vh;
+  height: 2px;
 }
 ::-webkit-scrollbar-thumb {
   background: #00FF00;
