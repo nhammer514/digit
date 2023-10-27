@@ -28,6 +28,7 @@ section.home-main{
 
 div.content{
 	border-top: 2px solid #00FF00;
+	border-bottom: 2px solid #00FF00;
 	height: 80vh;
 	overflow-y: scroll;
 	text-align: left;
@@ -119,6 +120,10 @@ h1.header{
 
 div.flex-container{
 	display: flex;
+}
+
+div.contacts{
+    width: 50%
 }
 
 img.portrait{
