@@ -27,8 +27,8 @@ section.home-main{
 }
 
 div.content{
-	border-top: 2px solid #00FF00;
-	border-bottom: 2px solid #00FF00;
+	border-top: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
 	height: 80vh;
 	overflow-y: scroll;
 	text-align: left;
@@ -94,12 +94,12 @@ li{
 	}
 	to {
 		opacity: 1.0;
-		color: #00FF00;
+		color: #FFFFFF;
 	}
 }
 
 a{
-	color: #00FF00;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 a:hover{
@@ -108,7 +108,7 @@ a:hover{
 
 nav{
 	word-spacing: 35px;
-	color: #00FF00;
+	color: #FFFFFF;
 	padding-top: 5em;
 	font-size: 1.5em;
 }
@@ -123,16 +123,18 @@ div.flex-container{
 }
 
 div.contacts{
-    width: 50%
+    width: 50%;
+    font-family: Monospace;
+    font-size: 21px;
 }
 
 img.portrait{
-	border: 2px solid #00FF00;
+	border: 2px solid #FFFFFF;
 	float: right;
 	width: 35%
 }
 img.portrait2{
-	border: 2px solid #00FF00;
+	border: 2px solid #FFFFFF;
 	float: left;
 	width: 35%
 }
@@ -142,5 +144,5 @@ img.portrait2{
   height: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00FF00;
+  background: #FFFFFF;
 }
