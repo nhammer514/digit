@@ -1,13 +1,3 @@
-
-div.about{
-    width: 80%;
-    height: 70vh;
-    overflow-y: auto;
-    position: fixed;
-    inset: 0px;
-    margin: auto;
-    align-items: center;
-}
 div.resume{
     width: 80%;
     height: 70vh;
@@ -18,6 +8,15 @@ div.resume{
 }
 
 @media only screen and (max-width: 768px) {
+    div.about{
+        width: 80%;
+        height: 65vh;
+        overflow-y: auto;
+        position: fixed;
+        inset: 0px;
+        margin: auto;
+        align-items: center;
+    }
     img.portfolio{
         width: 30vh;
     }
@@ -30,6 +29,15 @@ div.resume{
   }
 
   @media only screen and (min-width: 600px) {
+    div.about{
+        width: 80%;
+        height: 70vh;
+        overflow-y: auto;
+        position: fixed;
+        inset: 0px;
+        margin: auto;
+        align-items: center;
+    }
     img.portfolio{
         width: 40vw;
     }
